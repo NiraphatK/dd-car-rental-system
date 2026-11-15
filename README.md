@@ -50,17 +50,22 @@ Implements essential OOP principles:
 ## 🛠 Tech Stack
 | Category | Technology |
 |-----------|-------------|
-| ☕ Language | **Java (JDK 8 or later)** |
+| ☕ Language | **Java (JDK 17, matching the Eclipse project configuration)** |
 | 🖼 UI Framework | **Java Swing** |
 | 💻 IDE | **Eclipse IDE** |
 
 ---
 
-## 🚀 How to Run
-1. Ensure **Java JDK 8+** is installed  
-2. Open the project in **Eclipse IDE**  
-3. Run `Main.java` (or any class with `main()` method)  
-4. Explore the system: **Book → Rent → Pay → Done!**
+## Run locally
+
+1. Install JDK 17 and Eclipse IDE for Java Developers.
+2. Clone this repository and choose **File → Import → Existing Projects into Workspace** in Eclipse.
+3. Select the repository root, which contains `.project` and `.classpath`.
+4. Keep the bundled JAR dependencies available at the paths declared in `.classpath`.
+5. Run **`src/main/Launcher.java`** as a Java Application. It initializes the look and feel and opens the main window.
+6. Set the run configuration's working directory to the repository root so relative files such as `carinfo.txt`, `register.txt`, and `billpayment.txt` resolve correctly.
+
+Use a disposable copy of the sample text files when exploring booking and payment flows: this academic simulation can update its local records. Payments are simulated; no real payment integration is documented.
 
 ---
 
